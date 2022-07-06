@@ -1,18 +1,21 @@
+import { Provider } from "react-redux"
+import store from "./store";
 import Nav from "./components/Nav";
 import Products from "./components/Products";
 import productsData from "./data/ProductsData";
+import Contador from "./components/Contador";
 
 function App() {
 
-  const agregarCarro = () => {
-    console.log('agregando')
-  }
 
   return (
-    <div className="App">
-      <Nav />
-      <Products />
-    </div>
+    <Provider store={store}>
+      <div className="App">
+        <Nav />
+        <Products />
+        <Contador></Contador>
+      </div>
+    </Provider>
   );
 }
 
