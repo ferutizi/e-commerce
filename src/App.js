@@ -13,7 +13,7 @@ function App() {
       <div className="App">
         <Nav />
         <Products />
-        <Contador></Contador>
+        <Contador />
       </div>
     </Provider>
   );
