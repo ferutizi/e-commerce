@@ -1,0 +1,15 @@
+@import '../scss/mixins';
+
+.nav--container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding: 10px 25px;
+    background-color: rgb(212, 212, 250);
+    box-shadow: 1px 1px 20px;
+}
+
+.btn--carro {
+   @include buttons;
+}
