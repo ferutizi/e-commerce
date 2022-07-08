@@ -1,9 +1,8 @@
 import { Provider } from "react-redux"
 import store from "./store";
 import Nav from "./components/Nav";
-import Products from "./components/Products";
-import productsData from "./data/ProductsData";
 import Contador from "./components/Contador";
+import ShoppingCart from "./components/ShoppingCart";
 
 function App() {
 
@@ -12,7 +11,7 @@ function App() {
     <Provider store={store}>
       <div className="App">
         <Nav />
-        <Products />
+        <ShoppingCart />
         <Contador />
       </div>
     </Provider>
