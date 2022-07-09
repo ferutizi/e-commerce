@@ -50,13 +50,14 @@ export function shoppingReducer(state, action) {
                 }
         }
         case TYPES.REMOVE_ONE_TO_CART: {
-            let itemToDelete = state.cart.find(product => product.id === action.payload)
+            let itemToDelete = state.cart.find(
+                product => product.id === action.payload
+            );
             
             return itemToDelete.amount > 1 
             ? { 
                 ...state,
-                cart: state.cart.map(
-                    item => item.id === item.payload 
+                cart: state.cart.map(item => item.id === itemToDelete.id 
                         ? {...item, amount: item.amount -1} 
                         : item
                 ),

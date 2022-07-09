@@ -17,10 +17,8 @@ const ShoppingCart = () => {
 
     const deleteFromCart = (id, all = false) => {
         if(all) {
-            console.log('todos')
             dispatch({type: TYPES.REMOVE_ALL_TO_CART, payload: id});
         } else {
-            console.log('uno')
             dispatch({type: TYPES.REMOVE_ONE_TO_CART, payload: id});
         }
     }
@@ -34,12 +32,12 @@ const ShoppingCart = () => {
             <h2>Carrito</h2>
             <h3>Productos</h3>
             <article className="card--container">
-                {products.map((product) => <ProductsItems key={products.id} data={product} addToCart={addToCart}></ProductsItems>)}
+                {products.map((product) => <ProductsItems key={products.id} data={product} addToCart={addToCart} />)}
             </article>
             <button onClick={clearCart}>Limpiar carrito</button>
             <h3>items</h3>
             {
-                cart.map((item, index) => <CartItem key={index} data={item} deleteFromCart={() => deleteFromCart}/>)
+                cart.map((item, index) => <CartItem key={index} data={item} deleteFromCart={deleteFromCart}/>)
             }
         </div>
     )
