@@ -1,44 +1,40 @@
 import './ShoppingCart.scss'
 
-import { useReducer } from "react"
-import { shoppingInitialState, shoppingReducer } from "../reducers/shoppingReducer"
+import { useDispatch, useSelector } from 'react-redux';
+import {addToCart, clearCart, deleteFromCart} from "../actions/shoppingActions"
 import ProductsItems from "./ProductsItems";
-import { TYPES } from '../actions/shoppingActions';
 import CartItem from './CartItem';
 
 const ShoppingCart = () => {
 
-    const [state, dispatch] = useReducer(shoppingReducer, shoppingInitialState);
-    const {products, cart} = state;
+    const state = useSelector(state => state);
+    const dispatch = useDispatch();
 
-    const addToCart = (id) => {
-        dispatch({type: TYPES.ADD_TO_CART, payload: id})
-    };
-
-    const deleteFromCart = (id, all = false) => {
-        if(all) {
-            dispatch({type: TYPES.REMOVE_ALL_TO_CART, payload: id});
-        } else {
-            dispatch({type: TYPES.REMOVE_ONE_TO_CART, payload: id});
-        }
-    }
-
-    const clearCart = () => {
-        dispatch({type: TYPES.CLEAR_CART});
-    };
+    const { products, cart } = state.shopping;
 
     return(
         <div>
             <h2>Carrito</h2>
             <h3>Productos</h3>
             <article className="card--container">
-                {products.map((product) => <ProductsItems key={products.id} data={product} addToCart={addToCart} />)}
+                {products.map((product) => (
+                    <ProductsItems
+                        key={products.id}
+                        data={product}
+                        addToCart={() => dispatch(addToCart(product.id))}
+                    />
+                ))}
             </article>
-            <button onClick={clearCart}>Limpiar carrito</button>
+            <button onClick={() => dispatch(clearCart())}>Limpiar carrito</button>
             <h3>items</h3>
-            {
-                cart.map((item, index) => <CartItem key={index} data={item} deleteFromCart={deleteFromCart}/>)
-            }
+                {cart.map((product, index) => (
+                    <CartItem
+                        key={index}
+                        data={product}
+                        deleteOneFromCart={() => dispatch(deleteFromCart(product.id))}
+                        deleteAllFromCart={() => dispatch(deleteFromCart(product.id, true))}
+                    />
+                ))}
         </div>
     )
 }

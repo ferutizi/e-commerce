@@ -1,4 +1,4 @@
-const CartItem = ({ data, deleteFromCart }) => {
+const CartItem = ({ data, deleteOneFromCart, deleteAllFromCart }) => {
 
     let {id, name, price, img, amount} = data;
 
@@ -6,8 +6,8 @@ const CartItem = ({ data, deleteFromCart }) => {
         <div>
             <h4>{name}    ({amount})</h4>
             <h5>${price}</h5>
-            <button onClick={() => deleteFromCart(id)}>Eliminar</button>
-            <button onClick={() => deleteFromCart(id, true)}>Eliminar Todos</button>
+            <button onClick={() => deleteOneFromCart(id)}>Eliminar</button>
+            <button onClick={() => deleteAllFromCart(id, true)}>Eliminar Todos</button>
         </div>
     )
 }
