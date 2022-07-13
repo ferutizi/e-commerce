@@ -1,7 +1,8 @@
-@mixin buttons() {
-    font-size: 16px;
-    padding: 10px 20px;
+@mixin buttons($color, $paddingX, $paddingY, $font-size) {
+    background-color: $color;
+    font-size: $font-size;
     height: fit-content;
+    padding: $paddingX $paddingY;
     border-radius: 4px;
     border: none;
     box-shadow: 1px 2px 5px rgba(0,0,0,0.8);

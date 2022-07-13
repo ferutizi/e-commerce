@@ -1,0 +1,20 @@
+@import '../scss/mixins';
+
+/* 
+className='cart--name'
+className='cart--price'
+*/
+
+.cart--card {
+    background-color: gray;
+    width: fit-content;
+}
+
+.btn--delete {
+    @include buttons(white, 0.62rem, 1.25rem, 1rem);
+}
+
+.btn--delete__red {
+    @include buttons(red, 0.62rem, 1.25rem, 1rem);
+    
+}

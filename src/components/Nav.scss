@@ -1,4 +1,5 @@
 @import '../scss/mixins';
+@import '../scss/variables';
 
 .nav--container {
     display: flex;
@@ -6,10 +7,11 @@
     align-items: center;
     margin: 0;
     padding: 10px 25px;
-    background-color: rgb(212, 212, 250);
+    background-color: $primary;
     box-shadow: 1px 1px 20px;
 }
 
 .btn--carro {
-   @include buttons;
+   @include buttons(white, 0.62rem, 1.25rem, 1rem);
+   padding: 0.62rem, 1.25rem;
 }

@@ -6,7 +6,6 @@ import ShoppingCart from "./components/ShoppingCart";
 
 function App() {
 
-
   return (
     <Provider store={store}>
       <div className="App">

@@ -4,3 +4,17 @@
     text-align: center;
     margin: 40px 80px;
 }
+
+.cart--container {
+    background-color: red;
+    height: fit-content;
+    width: fit-content;
+    margin: 2rem;
+    padding: 1rem;
+    border-radius: 10px; 
+    position: absolute; 
+    top: 40px; 
+    right: -1rem; 
+
+    border: 1px solid black;
+}

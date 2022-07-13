@@ -1,15 +1,22 @@
 @import '../scss/mixins';
+@import '../scss/variables';
 
 .card {
     margin: 10px;
     padding: 10px;
-    background-color: #ddd;
+    background-color: #fff;
     border-radius: 6px;
+    border: 1px solid $primary;
+    box-shadow: 5px 7px 8px rgba(0,0,0,0.5);
+    &:hover {
+        transform: scale(1.005);
+    }
 }
 
 .card--img {
     height: 180px;
     border-radius: 4px;
+    border: 1px solid rgba(0,0,0, 0.2);
 }
 
 .card--name {
@@ -18,10 +25,10 @@
 }
 
 .card--price {
-    font-size: 20px
+    font-size: 20px;
 }
 
 .btn--product {
-    @include buttons;
+    @include buttons($primary, 0.62rem, 1.25rem, 1rem);
     margin-bottom: 10px;
 }
