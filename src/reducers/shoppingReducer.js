@@ -29,7 +29,7 @@ export const initialState = {
         img: '/productos/arbejas.jpg'
     },
 ],
-    cart:[]
+    cart:[],
 };
 
 export function shoppingReducer(state = initialState, action) {
@@ -46,11 +46,11 @@ export function shoppingReducer(state = initialState, action) {
                     ...state,
                     cart: state.cart.map(item => item.id === newItem.id 
                         ? {...item, amount: item.amount +1} 
-                        : item)
-                }
+                        : item),
+                    }
                 : {
                     ...state,
-                    cart: [...state.cart, {...newItem, amount: +1}]
+                    cart: [...state.cart, {...newItem, amount: +1}],
                 }
         }
         case REMOVE_ONE_FROM_CART: {

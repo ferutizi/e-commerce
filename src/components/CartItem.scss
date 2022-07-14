@@ -31,11 +31,11 @@
 }
 
 .btn--delete {
-    @include buttons(white, 0.2rem, 0.5rem, 1rem);
+    @include buttons(aliceblue, 0.2rem, 0.5rem, 1rem);
     margin: 5px 5px;
 }
 
-.btn--delete__red {
+.btn--delete__all {
     @include buttons($primary, 0.2rem, 0.5rem, 1rem);
     margin: 5px 5px;
     

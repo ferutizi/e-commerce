@@ -6,10 +6,20 @@ const ProductsItems = ( {data, addToCart} ) => {
 
     return(
         <div className='card'>
-            <img className="card--img" src={img} alt={name} />
+            <img
+                className="card--img"
+                src={img}
+                alt={name}
+            />
             <h4 className="card--name">{name}</h4>
             <p className="card--price">$ {price}</p>
-            <button className="btn--product" onClick={() => addToCart(id)}>Agregar al carrito</button>
+            
+            <button
+                className="btn--product"
+                onClick={() => addToCart(id)}
+            >Agregar al carrito
+            </button>
+
         </div>
     )
 }

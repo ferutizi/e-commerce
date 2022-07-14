@@ -4,6 +4,7 @@
 .nav--container {
     display: flex;
     justify-content: space-between;
+    width: 100vw;
     align-items: center;
     margin: 0;
     padding: 10px 25px;
@@ -12,6 +13,7 @@
 }
 
 .btn--carro {
-   @include buttons(white, 0.62rem, 1.25rem, 1rem);
+   @include buttons(aliceblue, 0.62rem, 1.25rem, 1rem);
    padding: 0.62rem, 1.25rem;
+   margin: 0px 4.2em;
 }

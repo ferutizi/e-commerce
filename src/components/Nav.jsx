@@ -10,8 +10,10 @@ const Nav = () => {
     return(
         <nav className="nav--container">
             <h1 className="logo">Shop</h1>
-            <button className="btn--carro" onClick={() => dispatch(showCart(state))}>
-                carro
+            <button
+                className="btn--carro"
+                onClick={() => dispatch(showCart(state))}
+            >carro
             </button>
         </nav>
     )
