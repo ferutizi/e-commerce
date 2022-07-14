@@ -26,20 +26,25 @@ const ShoppingCart = () => {
                     />
                 ))}
             </article>
-            <button onClick={() => dispatch(clearCart())}>Limpiar carrito</button>
-            <h3>items</h3>
-                {state.cart ? 
-                    <div className='cart--container'>
-                        {cart.map((product, index) => (
-                            <CartItem
-                                key={index}
-                                data={product}
-                                deleteOneFromCart={() => dispatch(deleteFromCart(product.id))}
-                                deleteAllFromCart={() => dispatch(deleteFromCart(product.id, true))}
-                            />
-                        ))}
-                    </div>
-                : null}
+            <button onClick={() => console.log(cart.lenght)}>Limpiar carrito</button>
+
+                {state.cart 
+                    ? <div className='cart--container'>
+                            {cart.length < 1
+                                ? <h3 className='cart--title'>El carrito está vacío</h3>
+                                : null 
+                            }
+                            {cart.map((product, index) => (
+                                <CartItem
+                                    key={index}
+                                    data={product}
+                                    deleteOneFromCart={() => dispatch(deleteFromCart(product.id))}
+                                    deleteAllFromCart={() => dispatch(deleteFromCart(product.id, true))}
+                                />
+                            ))}
+                        </div>
+                    : null 
+                }
         </div>
     )
 }
