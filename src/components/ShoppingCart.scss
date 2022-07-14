@@ -1,3 +1,5 @@
+@import '../scss/variables';
+
 .card--container {
     display: flex;
     justify-content: center;
@@ -6,15 +8,13 @@
 }
 
 .cart--container {
-    background-color: red;
+    background-color: aliceblue;
     height: fit-content;
     width: fit-content;
-    margin: 2rem;
     padding: 1rem;
     border-radius: 10px; 
     position: absolute; 
-    top: 40px; 
-    right: -1rem; 
-
-    border: 1px solid black;
+    top: 5rem; 
+    right: 1.5rem;
+    box-shadow: 3px 3px 12px 2px hsl(157, 95%, 10%) ; 
 }

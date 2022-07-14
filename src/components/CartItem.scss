@@ -1,20 +1,42 @@
 @import '../scss/mixins';
-
-/* 
-className='cart--name'
-className='cart--price'
-*/
+@import '../scss/variables';
 
 .cart--card {
-    background-color: gray;
+    background-color: white;
     width: fit-content;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid $primary;
+    border-radius: 8px;
+}
+
+.cart--name {
+    font-size: 20px;
+    margin: 0;
+}
+
+.cart--price {
+    font-size: 16px;
+    margin-top: 8px;
+}
+
+.text--container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cart--img {
+    height: 60px;
+    width: auto;
 }
 
 .btn--delete {
-    @include buttons(white, 0.62rem, 1.25rem, 1rem);
+    @include buttons(white, 0.2rem, 0.5rem, 1rem);
+    margin: 5px 5px;
 }
 
 .btn--delete__red {
-    @include buttons(red, 0.62rem, 1.25rem, 1rem);
+    @include buttons($primary, 0.2rem, 0.5rem, 1rem);
+    margin: 5px 5px;
     
 }
