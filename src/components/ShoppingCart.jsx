@@ -4,13 +4,14 @@ import { useDispatch, useSelector } from 'react-redux';
 import {addToCart, clearCart, deleteFromCart} from "../actions/shoppingActions"
 import ProductsItems from "./ProductsItems";
 import CartItem from './CartItem';
+import Notification from './Notification';
 
 const ShoppingCart = () => {
 
     const state = useSelector(state => state);
     const dispatch = useDispatch();
 
-    const { products, cart, total } = state.shopping;
+    const { products, cart, total, cantidadItems } = state.shopping;
 
     return(
         <div>
@@ -52,10 +53,22 @@ const ShoppingCart = () => {
 
                                 </div>
                             }
-
                         </div>
                     : null 
-                }
+                }     
+
+                <Notification></Notification> 
+
+{/*                 {(() => {
+                    if (cantidadItems) {
+                        if(cantidadItems > 9) {
+                            return <div className='cantidadItems'>9+</div>
+                        } else {
+                            return <div className='cantidadItems'>{cantidadItems}</div>
+                        }
+                    }})
+                } */}
+            
         </div>
     )
 }
