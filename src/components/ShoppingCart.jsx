@@ -10,7 +10,7 @@ const ShoppingCart = () => {
     const state = useSelector(state => state);
     const dispatch = useDispatch();
 
-    const { products, cart } = state.shopping;
+    const { products, cart, total } = state.shopping;
 
     return(
         <div>
@@ -38,7 +38,7 @@ const ShoppingCart = () => {
                                         />
                                     ))}
 
-                                    <p className='card--price'>total: $</p>
+                                    <p className='card--price'>total: {total} $</p>
                                     <button
                                         className='btn--delete'
                                         onClick={() => dispatch(clearCart())}
