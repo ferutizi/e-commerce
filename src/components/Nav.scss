@@ -15,13 +15,13 @@
 .btn--carro {
    @include buttons(aliceblue, 0.62rem, 1.25rem, 1rem);
    padding: 0.62rem, 1.25rem;
-   margin: 0px 4.2em;
+   margin: 0;
    max-height: 37.81px;
+
 }
 
 .cantidadItems {
     background-color: rgb(255, 53, 53);
-
     text-align: center;
     max-width: 15px;
     font-size: 12px;

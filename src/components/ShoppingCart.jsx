@@ -4,7 +4,6 @@ import { useDispatch, useSelector } from 'react-redux';
 import {addToCart, clearCart, deleteFromCart} from "../actions/shoppingActions"
 import ProductsItems from "./ProductsItems";
 import CartItem from './CartItem';
-import Notification from './Notification';
 
 const ShoppingCart = () => {
 
