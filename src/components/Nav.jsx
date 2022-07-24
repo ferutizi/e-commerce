@@ -1,5 +1,6 @@
 import { useDispatch, useSelector } from 'react-redux'
 import { showCart } from '../actions/showCartActions';
+import Notification from './Notification';
 import './Nav.scss'
 
 const Nav = () => {
@@ -10,11 +11,14 @@ const Nav = () => {
     return(
         <nav className="nav--container">
             <h1 className="logo">Shop</h1>
-            <button
-                className="btn--carro"
-                onClick={() => dispatch(showCart(state))}
-            >carro
-            </button>
+            <div>
+                <button
+                    className="btn--carro"
+                    onClick={() => dispatch(showCart(state))}
+                >carro
+                    <Notification /> 
+                </button>
+            </div>
         </nav>
     )
 }

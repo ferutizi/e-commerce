@@ -56,19 +56,6 @@ const ShoppingCart = () => {
                         </div>
                     : null 
                 }     
-
-                <Notification></Notification> 
-
-{/*                 {(() => {
-                    if (cantidadItems) {
-                        if(cantidadItems > 9) {
-                            return <div className='cantidadItems'>9+</div>
-                        } else {
-                            return <div className='cantidadItems'>{cantidadItems}</div>
-                        }
-                    }})
-                } */}
-            
         </div>
     )
 }
