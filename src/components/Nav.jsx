@@ -9,17 +9,15 @@ const Nav = () => {
     const dispatch = useDispatch();
 
     return(
-        <nav className="nav--container">
+        <div className="nav--container">
             <h1 className="logo">Shop</h1>
-            <div>
-                <button
-                    className="btn--carro"
-                    onClick={() => dispatch(showCart(state))}
-                >carro
-                    <Notification /> 
-                </button>
-            </div>
-        </nav>
+            <button
+                className="btn--carro"
+                onClick={() => dispatch(showCart(state))}
+            >carro
+                <Notification /> 
+            </button>
+        </div>
     )
 }
 

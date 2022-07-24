@@ -4,12 +4,12 @@
 .nav--container {
     display: flex;
     justify-content: space-between;
-    width: 100vw;
     align-items: center;
     margin: 0;
     padding: 10px 25px;
     background-color: $primary;
     box-shadow: 1px 1px 20px;
+    box-sizing: border-box;
 }
 
 .btn--carro {
