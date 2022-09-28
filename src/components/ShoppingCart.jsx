@@ -1,7 +1,7 @@
 import './ShoppingCart.scss'
 
 import { useDispatch, useSelector } from 'react-redux';
-import {addToCart, clearCart, deleteFromCart} from "../actions/shoppingActions"
+import { addToCart, clearCart, deleteFromCart } from "../actions/shoppingActions"
 import ProductsItems from "./ProductsItems";
 import CartItem from './CartItem';
 
@@ -10,7 +10,7 @@ const ShoppingCart = () => {
     const state = useSelector(state => state);
     const dispatch = useDispatch();
 
-    const { products, cart, total, cantidadItems } = state.shopping;
+    const { products, cart, total } = state.shopping;
 
     return(
         <div>

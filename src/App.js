@@ -4,7 +4,6 @@ import Nav from "./components/Nav";
 import ShoppingCart from "./components/ShoppingCart";
 
 function App() {
-
   return (
     <>
       <Provider store={store}>

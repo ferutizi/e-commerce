@@ -1,4 +1,4 @@
-import {combineReducers} from "redux";
+import { combineReducers } from "redux";
 import { shoppingReducer } from "./shoppingReducer";
 import { showCartReducer } from "./showCartReducer"
 

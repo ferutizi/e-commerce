@@ -1,6 +1,6 @@
 import './ProductsItems.scss'
 
-const ProductsItems = ( {data, addToCart} ) => {
+const ProductsItems = ({ data, addToCart }) => {
 
     let {id, name, price, img} = data;
 
