@@ -1,7 +1,7 @@
-import { useDispatch, useSelector } from 'react-redux'
+import { useDispatch, useSelector } from 'react-redux';
 import { showCart } from '../actions/showCartActions';
 import Notification from './Notification';
-import './Nav.scss'
+import './Nav.scss';
 import SearchBar from './SearchBar';
 
 const Nav = () => {
@@ -23,4 +23,4 @@ const Nav = () => {
     )
 }
 
-export default Nav
+export default Nav;

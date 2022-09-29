@@ -1,5 +1,4 @@
-import './CartItem.scss'
-
+import './CartItem.scss';
 const CartItem = ({ data, deleteOneFromCart, deleteAllFromCart }) => {
 
     let {id, name, price, img, amount} = data;
@@ -30,4 +29,4 @@ const CartItem = ({ data, deleteOneFromCart, deleteAllFromCart }) => {
     )
 }
 
-export default CartItem
+export default CartItem;

@@ -1,13 +1,14 @@
-import './SearchBar.scss'
+import './SearchBar.scss';
 import { useState } from "react";
 import { initialState } from "../reducers/shoppingReducer";
 import { useDispatch, useSelector } from 'react-redux';
+import { renderSearch } from '../actions/shoppingActions';
 
 const SearchBar = () => {
     const [query, setQuery] = useState("")
 
     const state = useSelector(state => state);
-/*     const dispatch = useDispatch(); */
+    const dispatch = useDispatch();
     const { products } = state.shopping;
 
     return(
@@ -27,7 +28,7 @@ const SearchBar = () => {
                     }
                 }).map((p, index) => (
                     <div className="search-box" key={index}>
-                        <p className='search-item' onClick={() => console.log(`'renderizando...' ${p.name}`)}>{p.name}</p>
+                        <p className='search-item' onClick={() => dispatch(renderSearch(p.id))}>{p.name}</p>
                     </div>
                 ))
                 }
@@ -37,4 +38,4 @@ const SearchBar = () => {
     )
 }
 
-export default SearchBar
+export default SearchBar;

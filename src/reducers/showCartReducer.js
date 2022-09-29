@@ -5,8 +5,8 @@ const initialState = false;
 export function showCartReducer(state = initialState, action) {
     switch(action.type) {
         case SHOW_CART:
-            return !state
+            return !state;
         default:
-            return state
+            return state;
     }
 }

@@ -1,4 +1,4 @@
-import './ProductsItems.scss'
+import './ProductsItems.scss';
 
 const ProductsItems = ({ data, addToCart }) => {
 
@@ -24,4 +24,4 @@ const ProductsItems = ({ data, addToCart }) => {
     )
 }
 
-export default ProductsItems
+export default ProductsItems;

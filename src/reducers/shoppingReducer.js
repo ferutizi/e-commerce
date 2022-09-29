@@ -2,7 +2,8 @@ import {
     ADD_TO_CART,
     CLEAR_CART,
     REMOVE_ALL_FROM_CART,
-    REMOVE_ONE_FROM_CART
+    REMOVE_ONE_FROM_CART,
+    RENDER_SEARCH
 } from "../types";
 
 export const initialState = {
@@ -33,6 +34,19 @@ export const initialState = {
     total: 0,
     cantidadItems: 0,
 };
+
+function renderSearch(state, action) {
+    let newItem = state.products.filter(
+        product => product.id === action.payload
+        );
+    console.log(state.products)
+    return newItem
+        ? {
+            ...state,
+            products: newItem,
+        }
+        : null
+}
 
 function addToCart(state, action) {
     let newItem = state.products.find(
@@ -100,16 +114,19 @@ export function shoppingReducer(state = initialState, action) {
     switch(action.type) {
 
         case ADD_TO_CART: {
-            return addToCart(state, action)
+            return addToCart(state, action);
         }
         case REMOVE_ONE_FROM_CART: {
-            return removeOneFromCart(state, action)
+            return removeOneFromCart(state, action);
         }
         case REMOVE_ALL_FROM_CART: {
-            return removeAllFromCart(state, action)
+            return removeAllFromCart(state, action);
         }
         case CLEAR_CART: {
-            return initialState
+            return initialState;
+        }
+        case RENDER_SEARCH: {
+            return renderSearch(state, action);
         }
         default:
             return state;

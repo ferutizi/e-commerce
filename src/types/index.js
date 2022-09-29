@@ -9,3 +9,7 @@ export const CLEAR_CART = "CLEAR_CART";
 //show cart
 
 export const SHOW_CART = "SHOW_CART";
+
+//render search
+
+export const RENDER_SEARCH = "RENDER_SEARCH";

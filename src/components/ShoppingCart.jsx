@@ -1,7 +1,6 @@
-import './ShoppingCart.scss'
-
+import './ShoppingCart.scss';
 import { useDispatch, useSelector } from 'react-redux';
-import { addToCart, clearCart, deleteFromCart } from "../actions/shoppingActions"
+import { addToCart, clearCart, deleteFromCart } from "../actions/shoppingActions";
 import ProductsItems from "./ProductsItems";
 import CartItem from './CartItem';
 
@@ -59,4 +58,4 @@ const ShoppingCart = () => {
     )
 }
 
-export default ShoppingCart
+export default ShoppingCart;
