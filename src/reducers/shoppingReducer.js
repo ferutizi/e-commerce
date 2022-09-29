@@ -6,40 +6,19 @@ import {
     RENDER_SEARCH
 } from "../types";
 
+import Products from "../Products.json"
+
 export const initialState = {
-    products: [
-    { 
-        id: 1,
-        name: 'Tomate',
-        price: 15,
-        amount: 0,
-        img: '/productos/tomate.jpg'
-    },
-    { 
-        id: 2,
-        name: 'Lechuga',
-        price: 8,
-        amount: 0,
-        img: '/productos/lechuga.jpg'
-    },
-    { 
-        id: 3,
-        name: 'Arbejas',
-        price: 10,
-        amount: 0,
-        img: '/productos/arbejas.jpg'
-    },
-],
+    products: Products,
     cart:[],
     total: 0,
     cantidadItems: 0,
 };
 
 function renderSearch(state, action) {
-    let newItem = state.products.filter(
+    let newItem = Products.filter(
         product => product.id === action.payload
         );
-    console.log(state.products)
     return newItem
         ? {
             ...state,
@@ -49,7 +28,7 @@ function renderSearch(state, action) {
 }
 
 function addToCart(state, action) {
-    let newItem = state.products.find(
+    let newItem = Products.find(
         product => product.id === action.payload
         );
     let itemInCart = state.cart.find(item => item.id === newItem.id)
@@ -71,7 +50,7 @@ function addToCart(state, action) {
 }
 
 function removeOneFromCart(state, action) {
-    let newItem = state.products.find(
+    let newItem = Products.find(
         product => product.id === action.payload
         );
     let itemToDelete = state.cart.find(
