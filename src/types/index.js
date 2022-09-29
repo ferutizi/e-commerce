@@ -13,3 +13,7 @@ export const SHOW_CART = "SHOW_CART";
 //render search
 
 export const RENDER_SEARCH = "RENDER_SEARCH";
+
+//home
+
+export const HOME = "HOME";

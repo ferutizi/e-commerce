@@ -3,10 +3,11 @@ import {
     CLEAR_CART,
     REMOVE_ALL_FROM_CART,
     REMOVE_ONE_FROM_CART,
-    RENDER_SEARCH
+    RENDER_SEARCH,
+    HOME
 } from "../types";
-
 import Products from "../Products.json"
+import { produceWithPatches } from "immer";
 
 export const initialState = {
     products: Products,
@@ -102,11 +103,22 @@ export function shoppingReducer(state = initialState, action) {
             return removeAllFromCart(state, action);
         }
         case CLEAR_CART: {
-            return initialState;
+            return {
+                ...state,
+                cart: [],
+                total: 0,
+                cantidadItems: 0
+            };
         }
         case RENDER_SEARCH: {
             return renderSearch(state, action);
         }
+        case HOME: {
+            return {
+                ...state,
+                products: Products
+            };
+        } 
         default:
             return state;
     };
