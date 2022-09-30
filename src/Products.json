@@ -19,5 +19,12 @@
         "price": 10,
         "amount": 0,
         "img": "/productos/arbejas.jpg"
+    },
+    { 
+        "id": 4,
+        "name": "Salsa de tomate",
+        "price": 12,
+        "amount": 0,
+        "img": "/productos/tomate.jpg"
     }
 ]

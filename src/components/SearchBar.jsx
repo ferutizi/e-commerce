@@ -1,6 +1,5 @@
 import './SearchBar.scss';
 import { useState } from "react";
-/* import { initialState } from "../reducers/shoppingReducer"; */
 import { useDispatch, useSelector } from 'react-redux';
 import { renderSearch } from '../actions/shoppingActions';
 import Data from '../Products.json'
@@ -10,13 +9,12 @@ const SearchBar = () => {
 
     const state = useSelector(state => state);
     const dispatch = useDispatch();
-/*     const { products } = state.shopping; */
 
     return(
         <>
-            <div className='search-input'>
+            <div className='input-container'>
                 <input 
-                    className='search-imput'
+                    className='search-input'
                     placeholder='Buscar producto'
                     onChange={event => setQuery(event.target.value)}    
                 />

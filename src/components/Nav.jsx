@@ -1,9 +1,10 @@
 import { useDispatch, useSelector } from 'react-redux';
 import { showCart } from '../actions/showCartActions';
+import { home } from '../actions/shoppingActions';
 import Notification from './Notification';
 import './Nav.scss';
 import SearchBar from './SearchBar';
-import { home } from '../actions/shoppingActions';
+import logo from '../logo/shop-logo.png'
 
 const Nav = () => {
 
@@ -12,7 +13,7 @@ const Nav = () => {
 
     return(
         <div className="nav--container">
-            <h1 className="logo" onClick={() => dispatch(home(state))}>Shop</h1>
+            <img src={logo} alt='logo verduleria' className="logo" onClick={() => dispatch(home(state))} />
             <SearchBar />
             <button
                 className="btn--carro"

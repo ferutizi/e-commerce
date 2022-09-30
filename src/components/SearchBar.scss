@@ -1,7 +1,15 @@
-.search-input {
-    position: absolute;
+.input-container {
+    display: flex; // problema con las sugerencias
+    align-items: center;
+/*     position: absolute;
     right: 580px;
-    height: 16px;
+    height: 16px; */
+}
+
+.search-input {
+    padding: 6px 2px;
+    width: 400px;
+    font-size: 16px;
 }
 
 .search-container {
