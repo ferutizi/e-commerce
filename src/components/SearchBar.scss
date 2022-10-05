@@ -1,24 +1,33 @@
+@import '../scss/variables';
+
 .input-container {
-    display: flex; // problema con las sugerencias
+    display: flex;
+    flex-direction: column;
     align-items: center;
-/*     position: absolute;
-    right: 580px;
-    height: 16px; */
+    position: absolute;
+    right: 29.37rem;
+    height: 2rem;
 }
 
 .search-input {
     padding: 6px 2px;
     width: 400px;
     font-size: 16px;
+    outline: none;
 }
 
 .search-container {
+    width: 100%;
     position: relative;
-    background-color: red;
+    background-color: $primary;
     padding: 6px 0;
 }
 
 .search-item {
     margin: 0;
     padding: 5px;
+    cursor: pointer;
+    &:hover{
+        background-color: $primary-hover;
+    }
 }

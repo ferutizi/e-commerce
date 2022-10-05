@@ -25,6 +25,41 @@
         "name": "Salsa de tomate",
         "price": 12,
         "amount": 0,
-        "img": "/productos/tomate.jpg"
+        "img": "/productos/salsa_de_tomate.jpg"
+    },
+    { 
+        "id": 5,
+        "name": "Manzana verde",
+        "price": 12,
+        "amount": 0,
+        "img": "/productos/manzana_verde.jpg"
+    },
+    { 
+        "id": 6,
+        "name": "Manzana roja",
+        "price": 12,
+        "amount": 0,
+        "img": "/productos/manzana_roja.jpg"
+    },
+    { 
+        "id": 7,
+        "name": "Uva",
+        "price": 12,
+        "amount": 0,
+        "img": "/productos/uva.jpg"
+    },
+    { 
+        "id": 8,
+        "name": "Naranja",
+        "price": 12,
+        "amount": 0,
+        "img": "/productos/naranja.jpg"
+    },
+    { 
+        "id": 9,
+        "name": "Pepino",
+        "price": 12,
+        "amount": 0,
+        "img": "/productos/pepino.jpg"
     }
 ]

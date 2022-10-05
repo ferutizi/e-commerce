@@ -1,10 +1,20 @@
 @import '../scss/variables';
 
-.card--container {
+.main--container {
     display: flex;
     justify-content: center;
+    margin: 3rem;
+}
+
+.card--container {
+/*     display: flex;
+    justify-content: center;
     text-align: center;
-    margin: 5rem 5rem;
+    margin: 5rem 5rem; */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+    text-align: center;
 }
 
 .cart--empty {

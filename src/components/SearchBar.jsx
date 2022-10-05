@@ -16,12 +16,13 @@ const SearchBar = () => {
                 <input 
                     className='search-input'
                     placeholder='Buscar producto'
-                    onChange={event => setQuery(event.target.value)}    
+                    onChange={event => setQuery(event.target.value)}
+                    autoFocus    
                 />
                 <div className='search-container'>
                 {Data.filter(p => {
                     if (query === '') {
-                        return null
+                        return null;
                     } else if (p.name.toLowerCase().includes(query.toLocaleLowerCase())) {
                         return p;
                     }

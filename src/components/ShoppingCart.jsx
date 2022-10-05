@@ -12,8 +12,8 @@ const ShoppingCart = () => {
     const { products, cart, total } = state.shopping;
 
     return(
-        <div>
-            <article className="card--container">
+        <div className='main--container'>
+            <article className='card--container'>
                 {products.map((product) => (
                     <ProductsItems
                         key={products.id}
@@ -23,37 +23,37 @@ const ShoppingCart = () => {
                 ))}
             </article>
 
-                {state.cart 
-                    ? <div className='cart--container'>
-                            {cart.length < 1
-                                ? <h3 className='cart--empty'>El carrito está vacío</h3>
-                                : <div>
-                                    {cart.map((product, index) => (
-                                        <CartItem
-                                            key={index}
-                                            data={product}
-                                            deleteOneFromCart={() => dispatch(deleteFromCart(product.id))}
-                                            deleteAllFromCart={() => dispatch(deleteFromCart(product.id, true))}
-                                        />
-                                    ))}
+            {state.cart 
+                ? <div className='cart--container'>
+                        {cart.length < 1
+                            ? <h3 className='cart--empty'>El carrito está vacío</h3>
+                            : <div>
+                                {cart.map((product, index) => (
+                                    <CartItem
+                                        key={index}
+                                        data={product}
+                                        deleteOneFromCart={() => dispatch(deleteFromCart(product.id))}
+                                        deleteAllFromCart={() => dispatch(deleteFromCart(product.id, true))}
+                                    />
+                                ))}
 
-                                    <p className='card--price'>total: {total} $</p>
-                                    <button
-                                        className='btn--delete'
-                                        onClick={() => dispatch(clearCart())}
-                                    >Limpiar carrito
-                                    </button>
+                                <p className='card--price'>total: {total} $</p>
+                                <button
+                                    className='btn--delete'
+                                    onClick={() => dispatch(clearCart())}
+                                >Limpiar carrito
+                                </button>
 
-                                    <button
-                                        className='btn--delete__all'
-                                    >Ir a pagar
-                                    </button>
+                                <button
+                                    className='btn--delete__all'
+                                >Ir a pagar
+                                </button>
 
-                                </div>
-                            }
-                        </div>
-                    : null 
-                }     
+                            </div>
+                        }
+                    </div>
+                : null 
+            }     
         </div>
     )
 }
