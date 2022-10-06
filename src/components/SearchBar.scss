@@ -1,29 +1,29 @@
 @import '../scss/variables';
 
-.input-container {
+.input--container {
     display: flex;
     flex-direction: column;
     align-items: center;
     position: absolute;
-    right: 29.37rem;
+/*     right: 29.37fr;  */
     height: 2rem;
 }
 
-.search-input {
+.search--input {
     padding: 6px 2px;
     width: 400px;
     font-size: 16px;
     outline: none;
 }
 
-.search-container {
+.search--container {
     width: 100%;
     position: relative;
     background-color: $primary;
     padding: 6px 0;
 }
 
-.search-item {
+.search--item {
     margin: 0;
     padding: 5px;
     cursor: pointer;

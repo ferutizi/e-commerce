@@ -11,30 +11,28 @@ const SearchBar = () => {
     const dispatch = useDispatch();
 
     return(
-        <>
-            <div className='input-container'>
-                <input 
-                    className='search-input'
-                    placeholder='Buscar producto'
-                    onChange={event => setQuery(event.target.value)}
-                    autoFocus    
-                />
-                <div className='search-container'>
-                {Data.filter(p => {
-                    if (query === '') {
-                        return null;
-                    } else if (p.name.toLowerCase().includes(query.toLocaleLowerCase())) {
-                        return p;
-                    }
-                }).map((p, index) => (
-                    <div className="search-box" key={index}>
-                        <p className='search-item' onClick={() => dispatch(renderSearch(p.id))}>{p.name}</p>
-                    </div>
-                ))
+        <div className='input--container'>
+            <input 
+                className='search--input'
+                placeholder='Buscar producto'
+                onChange={event => setQuery(event.target.value)}
+                autoFocus    
+            />
+            <div className='search--container'>
+            {Data.filter(p => {
+                if (query === '') {
+                    return null;
+                } else if (p.name.toLowerCase().includes(query.toLocaleLowerCase())) {
+                    return p;
                 }
+            }).map((p, index) => (
+                <div className="search-box" key={index}>
+                    <p className='search--item' onClick={() => dispatch(renderSearch(p.id))}>{p.name}</p>
+                </div>
+            ))
+            }
             </div>
-            </div>
-        </>
+        </div>
     )
 }
 
