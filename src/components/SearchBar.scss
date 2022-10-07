@@ -4,14 +4,13 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    position: absolute;
-/*     right: 29.37fr;  */
     height: 2rem;
+    width: 25rem;
 }
 
 .search--input {
     padding: 6px 2px;
-    width: 400px;
+    width: 100%;
     font-size: 16px;
     outline: none;
 }
@@ -29,5 +28,11 @@
     cursor: pointer;
     &:hover{
         background-color: $primary-hover;
+    }
+}
+
+@media (min-width: 0px) and (max-width: 700px) {
+    .input--container {
+        width: 10rem;
     }
 }

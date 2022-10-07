@@ -4,7 +4,7 @@
 .nav--container {
     display: flex;
     width: 100vw;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     margin: 0;
     padding: 10px 25px;
@@ -16,9 +16,7 @@
 .btn--carro {
    @include buttons(aliceblue, 0.62rem, 1.25rem, 1rem);
    padding: 0.62rem, 1.25rem;
-   margin: 0 20px;
-   max-height: 37.81px;
-
+   height: 2.5rem;
 }
 
 .cantidadItems {
@@ -36,8 +34,14 @@
 }
 
 .logo {
-    width: 120px;
+    width: 7rem;
     height: auto;
-    margin: 10px 0;
     cursor: pointer;
+    &:hover {
+        background-color: $primary-hover;
+        border-radius: 10px;
+    }
+    &:active {
+        background-color: $primary;
+    }
 }
