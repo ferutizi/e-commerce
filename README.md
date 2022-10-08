@@ -21,8 +21,8 @@ La aplicacion localmente corre en el puerto 3000
 ## Tareas pendientes
 
 - [x] Agregar total de todos los items en el carrito
-- [ ] Search bar y autocomplete
-- [ ] Mejorar el diseño
+- [x] Search bar y autocomplete
+- [x] Mejorar el diseño
 - [ ] Agregar tests
 
 
