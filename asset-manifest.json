@@ -1,16 +1,26 @@
 {
   "files": {
     "main.css": "/e-commerce/static/css/main.d21f8241.css",
-    "main.js": "/e-commerce/static/js/main.4d736d8a.js",
+    "main.js": "/e-commerce/static/js/main.da5a2c65.js",
     "static/js/787.dcc73137.chunk.js": "/e-commerce/static/js/787.dcc73137.chunk.js",
+    "static/media/uva.jpg": "/e-commerce/static/media/uva.e83f68447376de80923f.jpg",
+    "static/media/zanahoria.jpg": "/e-commerce/static/media/zanahoria.d00a5887c7fec88879d4.jpg",
+    "static/media/manzana_roja.jpg": "/e-commerce/static/media/manzana_roja.c8e6902e3d8606ace010.jpg",
+    "static/media/arbejas.jpg": "/e-commerce/static/media/arbejas.02eb6bcd49ecfb2ade17.jpg",
+    "static/media/naranja.jpg": "/e-commerce/static/media/naranja.b44eef0e6604b1c31cd1.jpg",
+    "static/media/lechuga.jpg": "/e-commerce/static/media/lechuga.65345de1a92203421e4c.jpg",
     "static/media/shop-logo.png": "/e-commerce/static/media/shop-logo.598add8e52d906e1a269.png",
+    "static/media/manzana_verde.jpg": "/e-commerce/static/media/manzana_verde.b84b01b3c559a9dfadac.jpg",
+    "static/media/tomate.jpg": "/e-commerce/static/media/tomate.de015811b565e31600ef.jpg",
+    "static/media/pepino.jpg": "/e-commerce/static/media/pepino.a5d2e2bec2750174da9a.jpg",
+    "static/media/salsa_de_tomate.jpg": "/e-commerce/static/media/salsa_de_tomate.57784ec5589bf9cdd943.jpg",
     "index.html": "/e-commerce/index.html",
     "main.d21f8241.css.map": "/e-commerce/static/css/main.d21f8241.css.map",
-    "main.4d736d8a.js.map": "/e-commerce/static/js/main.4d736d8a.js.map",
+    "main.da5a2c65.js.map": "/e-commerce/static/js/main.da5a2c65.js.map",
     "787.dcc73137.chunk.js.map": "/e-commerce/static/js/787.dcc73137.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.d21f8241.css",
-    "static/js/main.4d736d8a.js"
+    "static/js/main.da5a2c65.js"
   ]
 }
