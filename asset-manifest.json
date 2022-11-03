@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/e-commerce/static/css/main.d21f8241.css",
-    "main.js": "/e-commerce/static/js/main.da5a2c65.js",
+    "main.js": "/e-commerce/static/js/main.1200f780.js",
     "static/js/787.dcc73137.chunk.js": "/e-commerce/static/js/787.dcc73137.chunk.js",
     "static/media/uva.jpg": "/e-commerce/static/media/uva.e83f68447376de80923f.jpg",
     "static/media/zanahoria.jpg": "/e-commerce/static/media/zanahoria.d00a5887c7fec88879d4.jpg",
@@ -16,11 +16,11 @@
     "static/media/salsa_de_tomate.jpg": "/e-commerce/static/media/salsa_de_tomate.57784ec5589bf9cdd943.jpg",
     "index.html": "/e-commerce/index.html",
     "main.d21f8241.css.map": "/e-commerce/static/css/main.d21f8241.css.map",
-    "main.da5a2c65.js.map": "/e-commerce/static/js/main.da5a2c65.js.map",
+    "main.1200f780.js.map": "/e-commerce/static/js/main.1200f780.js.map",
     "787.dcc73137.chunk.js.map": "/e-commerce/static/js/787.dcc73137.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.d21f8241.css",
-    "static/js/main.da5a2c65.js"
+    "static/js/main.1200f780.js"
   ]
 }
