@@ -10,7 +10,7 @@ const CartItem = ({ data, deleteOneFromCart, deleteAllFromCart }) => {
                     <h4 className='cart--name'>{name}    ({amount})</h4>
                     <p className='cart--price'>${price} X {amount} = ${price * amount}</p>
                 </div>
-                <img className="cart--img" src={img} alt={name} />
+                <img className="cart--img" src={require(`../productos/${img}`)} alt={name} />
             </div>
 
             <button
