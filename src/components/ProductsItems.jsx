@@ -8,7 +8,7 @@ const ProductsItems = ({ data, addToCart }) => {
         <div className='card'>
             <img
                 className="card--img"
-                src={img}
+                src={require(`../productos/${img}`)}
                 alt={name}
             />
             <h4 className="card--name">{name}</h4>

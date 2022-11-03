@@ -1,5 +1,6 @@
 {
   "name": "ecommerce",
+  "homepage":"https://ferutizi.github.io/e-commerce",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -17,6 +18,8 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -42,6 +45,7 @@
   },
   "devDependencies": {
     "@redux-devtools/core": "^3.13.1",
+    "gh-pages": "^4.0.0",
     "redux-devtools": "^3.7.0"
   }
 }

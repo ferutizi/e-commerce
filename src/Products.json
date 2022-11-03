@@ -4,62 +4,62 @@
         "name": "Tomate",
         "price": 15,
         "amount": 0,
-        "img": "/productos/tomate.jpg"
+        "img": "tomate.jpg"
     },
     { 
         "id": 2,
         "name": "Lechuga",
         "price": 8,
         "amount": 0,
-        "img": "/productos/lechuga.jpg"
+        "img": "lechuga.jpg"
     },
     { 
         "id": 3,
         "name": "Arbejas",
         "price": 10,
         "amount": 0,
-        "img": "/productos/arbejas.jpg"
+        "img": "arbejas.jpg"
     },
     { 
         "id": 4,
         "name": "Salsa de tomate",
         "price": 12,
         "amount": 0,
-        "img": "/productos/salsa_de_tomate.jpg"
+        "img": "salsa_de_tomate.jpg"
     },
     { 
         "id": 5,
         "name": "Manzana verde",
         "price": 12,
         "amount": 0,
-        "img": "/productos/manzana_verde.jpg"
+        "img": "manzana_verde.jpg"
     },
     { 
         "id": 6,
         "name": "Manzana roja",
         "price": 12,
         "amount": 0,
-        "img": "/productos/manzana_roja.jpg"
+        "img": "manzana_roja.jpg"
     },
     { 
         "id": 7,
         "name": "Uva",
         "price": 12,
         "amount": 0,
-        "img": "/productos/uva.jpg"
+        "img": "uva.jpg"
     },
     { 
         "id": 8,
         "name": "Naranja",
         "price": 12,
         "amount": 0,
-        "img": "/productos/naranja.jpg"
+        "img": "naranja.jpg"
     },
     { 
         "id": 9,
         "name": "Pepino",
         "price": 12,
         "amount": 0,
-        "img": "/productos/pepino.jpg"
+        "img": "pepino.jpg"
     }
 ]
