@@ -17,7 +17,6 @@ La aplicacion localmente corre en el puerto 3000
 - Redux
 - SASS
 
-
 ## Tareas pendientes
 
 - [x] Agregar total de todos los items en el carrito
@@ -25,13 +24,8 @@ La aplicacion localmente corre en el puerto 3000
 - [x] Mejorar el diseño
 - [ ] Agregar tests
 
-
-## Futuras iteraciones
-
-- 
-
 # Contacto
 
 - Podes mandarme un mail a: fer.utizi@gmail.com
-- Podes ver portfolio completo [ACA](https://ferutizi.github.io/Portfolio/)
+- Podes ver mi portfolio completo [ACA](https://ferutizi.github.io/Portfolio/)
 - Podes ver mi linkedin [ACA](https://www.linkedin.com/in/fernando-utizi-2a72a3233/)
